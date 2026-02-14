@@ -1,0 +1,60 @@
+/*! Tecnologies.css*/
+
+/** Titulo de section */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-blue);
+}
+
+/** Tecnologias (bolitas de color) */
+.tech-pills-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/** Base bolita */
+.tech-pill {
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tech-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/*TODO: Variants */
+.tech-pill.blue {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.tech-pill.green {
+  border-color: #69db7c;
+  color: #69db7c;
+}
+
+.tech-pill.purple {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+.tech-pill.dark {
+  border-color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+/*TODO: RESPONSIVE */
+@media (max-width: 480px) {
+  .tech-pill {
+    font-size: 0.85rem;
+    padding: 6px 18px;
+  }
+}

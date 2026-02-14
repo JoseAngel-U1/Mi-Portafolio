@@ -1,0 +1,11 @@
+/*! NotFound.tsx */
+
+.Page-NotFound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*? vertical */
+  align-items: center;     /*? horizontal */
+  text-align: center;
+  font-size: 44px;
+}

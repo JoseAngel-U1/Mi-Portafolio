@@ -1,0 +1,47 @@
+/*! Footer.css */
+.main-footer {
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  color: var(--accent-blue);
+  transform: translateY(-3px);
+}
+
+.marca {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.programador {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: center;
+}
+.footer-info-a{
+ display: flex;
+ gap: 10px;
+}

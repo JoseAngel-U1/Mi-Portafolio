@@ -1,0 +1,168 @@
+/*! ProjectCard.css */
+
+/** Contenedor (carta) */
+.project-wireframe-card {
+    background: rgba(22, 24, 35, 0.85);
+    border: 1px solid rgba(77, 171, 247, 0.3);
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-wireframe-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/** Text Content */
+.wf-text-group {
+    flex: 1;
+    width: 420px;
+}
+
+.project-title {
+    font-size: 1.35rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+}
+
+.project-wireframe-card:hover .wf-btn-circle {
+    background: rgba(77, 171, 247, 0.2);
+    transform: scale(1.1);
+}
+
+.project-wireframe-card:hover .wf-btn-pill {
+    background: rgba(218, 119, 242, 0.2);
+    transform: scale(1.05);
+}
+
+/** Tecnologias usadas */
+.wf-tech {
+    margin-top: 9px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.tech-pill-CARD {
+    padding: 6px 15px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    background: rgba(154, 158, 158, 0.156);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    transition: transform 0.25s ease, background 0.25s ease;
+    white-space: nowrap; /*? para el "-"*/
+    text-align: center;
+}
+
+.tech-pill:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/** Botones */
+.wf-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.wf-btn-circle {
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-blue);
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.wf-btn-pill {
+    text-decoration: none;
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: 2px solid var(--accent-purple);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--accent-purple);
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.wf-btn-circle:hover,
+.wf-btn-pill:hover {
+    transform: scale(1.07);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/** Imagen */
+.wf-image-box {
+    width: 385px;
+    height: 250px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: background 0.3s ease, border-color 0.3s ease;
+    margin: 0 auto; /*//? Centrado horizontalmente */
+}
+
+.img-proyecto {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.project-wireframe-card:hover .wf-image-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-purple);
+}
+
+/*TODO: Solo en desktop (2 Columnas - card) */
+@media (min-width: 768px) {
+    .project-full {
+        grid-column: 1 / -1;
+    }
+}
+
+/*TODO: Responsive */
+@media (max-width: 640px) {
+    .project-wireframe-card {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .wf-text-group{
+        width: auto;
+    }
+    
+    .wf-image-box {
+        width: 100%;
+        height: 240px;
+        font-size: 1.4rem;
+    }
+}

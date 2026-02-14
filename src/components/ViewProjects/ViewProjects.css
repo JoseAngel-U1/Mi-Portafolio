@@ -1,0 +1,20 @@
+/*! ViewProjects.css*/
+
+/** Contenedor (section) */
+.view-projects .section-title {
+  margin-bottom: 1.5rem;
+}
+
+/** Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/*TODO: RESPONSIVE (Tablet / Desktop) */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
