@@ -14,10 +14,10 @@ const Footer: React.FC = () => {
                     </a>
                     <p>{miInfo.email}</p>
 
-                    <a href={`tel:+52${miInfo.phoneNumber}`} className="footer-icon">
+                    {/*<a href={`tel:+52${miInfo.phoneNumber}`} className="footer-icon">
                         <i className="fas fa-phone"></i>
                     </a>
-                    <p>{miInfo.phoneNumber}</p>
+                    <p>{miInfo.phoneNumber}</p>*/}
                 </div>
 
             </div>
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                 <a className="footer-icon"> <i className="far fa-heart"></i> </a>
                 {/*//? <a className="footer-icon"> <i className="fab fa-facebook-f"></i> </a> */}
                 {/*//? <a className="footer-icon"> <i className="fab fa-twitter"></i> </a> */}
-                <a href={`${miInfo.instagram}`} className="footer-icon"> <i className="fab fa-instagram"> </i></a>
+                {/*//? <a href={`${miInfo.instagram}`} className="footer-icon"> <i className="fab fa-instagram"> </i></a> */}
                 <a href={`mailto:${miInfo.email}`} className="footer-icon"> <i className="fas fa-envelope"></i> </a>
                 <a href={`${miInfo.cv}`} className="footer-icon"> <i className="fas fa-arrow-down"></i> </a>
             </div>

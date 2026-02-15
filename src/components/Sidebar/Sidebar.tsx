@@ -26,8 +26,8 @@ const Sidebar: React.FC = () => {
 
                 <div className="social-icons">
                     <a href={`${miInfo.cv}`} className="social-icon" aria-label="CV"> <i className="fa-solid fa-file"></i> </a>
-                    <a href={`${miInfo.instagram}`} className="social-icon" aria-label="Instagram"> <i className="fab fa-instagram"></i> </a>
-                    {/*//?<a href={`${miInfo.LinkedIn}`} className="social-icon" aria-label="LinkedIn"> <i className="fab fa-linkedin-in"></i> </a>*/}
+                    {/*//? <a href={`${miInfo.instagram}`} className="social-icon" aria-label="Instagram"> <i className="fab fa-instagram"></i> </a> */}
+                    {/*//? <a href={`${miInfo.LinkedIn}`} className="social-icon" aria-label="LinkedIn"> <i className="fab fa-linkedin-in"></i> </a> */}
                     <a href={`${miInfo.GitHub}`} className="social-icon" aria-label="GitHub"> <i className="fab fa-github"></i> </a>
                 </div>
 
