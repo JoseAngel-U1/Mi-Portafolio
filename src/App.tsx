@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound/NotFound';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/Mi-Portafolio/">
 
       {/*//TODO: Contenido principal */}
       <Layout>
